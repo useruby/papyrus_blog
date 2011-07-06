@@ -1,0 +1,10 @@
+<% BASE_DIR = Papyrus::Settings::BASE_DIR %>
+      
+documents_root: <%= "#{BASE_DIR}/app/views/papyrus" %>
+indexes_root: <%= "#{BASE_DIR}/tmp/indexes" %>
+searchd_log: <%= "#{BASE_DIR}/log/searchd.log" %>
+query_log: <%= "#{BASE_DIR}/log/query.log" %>
+searchd_pid: <%= "#{BASE_DIR}/tmp/pids/searchd.pid" %>
+searchd_port: 9612
+sphinx_conf: <%= "#{BASE_DIR}/config/sphinx.conf" %>
+

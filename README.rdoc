@@ -1,0 +1,7 @@
+= papyrus_blog
+
+== Copyright
+
+Copyright (c) 2011 Alexey Artamonov. See LICENSE.txt for
+further details.
+

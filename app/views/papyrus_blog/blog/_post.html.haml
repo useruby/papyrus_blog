@@ -1,0 +1,12 @@
+.post
+  .title
+    -if params[:action] == 'index'
+      =link_to post.title, papyrus_blog_url(:id => post.id)
+    -else
+      =post.title
+    =link_to post.author, papyrus_blog_index_url(:author => post.author), html_options = {:class => :author}
+    .date= post.date
+    .body= params[:action] == 'index' ? post.cutted_body.html_safe : post.body.html_safe
+    .tags
+      -post.tags.each do |tag|
+        =link_to tag, papyrus_blog_index_url(:tag => tag), html_options = {:class => :tag}
